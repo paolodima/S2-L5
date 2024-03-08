@@ -1,0 +1,19 @@
+Relazione esercizio S2/L5
+
+Abbiamo aggiunto la libreria ctype in maniera tale da avere accesso 
+alla funzione "toupper" per poter ricevere in input sia caratteri
+minuscoli che maiuscoli, rendendo così il programma case sensitive.
+Abbiamo cambiato l'input di scanf della scelta da "%d" a "%c" in modo tale da poter ricevere 
+un carattere(char).
+Successivamente abbiamo aggiunto come sopracitato la funzione toupper e un default in caso di inserimento di
+un'opzione non disponibile.
+Abbiamo poi individuato un errore nella funzione moltiplica nello 
+scanf in quanto le variabili dichiarate sono di tipo short int e quindi 
+l'abbiamo correto con "%hd".
+Nella funzione divisione abbiamo corretto con il giusto operatore ovvero "/" e non "%"
+in quanto quest'ultimo restituisce il modulo. Tramite la condizione if abbiamo 
+implementato l'impossibilità di dividere per 0.
+Infine nella funzione ins_string è stata aumentata la lunghezza effettiva della stringa da 9 
+a 10 visto che il compilatore comincia a contare da 0. La funzione getchar è stata da noi inserita in 
+maniera tale da escludere il carattere di spazio nello scanf evitando così eventuali bug.
+Nello scanf abbiamo scritto la "formula" "%10[^\n]" in modo tale da comprendere tutti i caratteri tranne \n
